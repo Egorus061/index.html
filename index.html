@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Картка продукту (Домашнє завдання)</title>
+    <style>
+        /*
+         * Рекомендовані властивості для картки:
+         * ширина 400px, колір фону #e8e8ea, внутрішні відступи 30px,
+         * розміщення дочірніх елементів в ряд по центру як вертикально, так і горизонтально,
+         * рамка 2px solid #03057c;
+         */
+        .product-card {
+            width: 400px;
+            background-color: #e8e8ea;
+            padding: 30px;
+            border: 2px solid #03057c;
+            /* Властивості для центрування вмісту: */
+            display: flex; /* Розміщення дочірніх елементів в ряд */
+            align-items: center; /* Центрування по вертикалі */
+            justify-content: center; /* Центрування по горизонталі (якщо загальна ширина контенту менша за 400px) */
+            /* Якщо ви бажаєте, щоб текст був ліворуч, а зображення праворуч */
+            justify-content: space-between; /* Рознесе елементи по краях */
+        }
+
+        /*
+         * Рекомендовані властивості для тексту:
+         * розмір тексту 28px;
+         */
+        .product-info {
+            font-size: 28px;
+            color: #333; /* Додано для кращої читабельності */
+            font-weight: bold; /* Додано для акценту */
+            text-align: left;
+        }
+
+        /*
+         * Рекомендовані властивості для зображення:
+         * ширина 200px, рамка border: 2px solid #b0b0b2,
+         * зовнішній відступ зліва 30px
+         */
+        .product-image {
+            width: 200px;
+            height: auto; /* Збереження пропорцій */
+            border: 2px solid #b0b0b2;
+            margin-left: 30px;
+            /* Зображення зазвичай блочний елемент, тому можемо застосовувати властивості безпосередньо */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Домашнє завдання.</h1>
+    <h2>Завдання: Створення картки продукту</h2>
+
+    <div class="product-card">
+        <div class="product-info">
+            <p>Помідор</p>
+            <p>Ціна - 47 грн</p>
+        </div>
+        <img class="product-image" src="https://i.imgur.com/Kx8n4z3.png" alt="Зображення помідора">
+    </div>
+
+</body>
+</html>
